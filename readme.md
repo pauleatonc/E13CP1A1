@@ -14,7 +14,7 @@
 
     - cod (integer) => código de la venta
     - detail (string) => detalle de la venta
-    - category (integer) => categoría de la venta (ingreso manual)
+    - category (string) => categoría de la venta (ingreso manual)
     - value (integer) => valor de la venta
     - discount (integer) => porcentaje de descuento aplicado de (1-100).
     - tax (integer) => porcentaje correspondiente al IVA.
@@ -30,6 +30,7 @@
 
 - El formulario debe ser generado utilizando el helper *form_with* asociado al modelo *Sale* y debe contener:
 
+	 - Un *input* tipo númerico para el código.
     - Un *textarea* para el detalle de la venta.
     - Un *input* tipo texto para la categoría.
     - Un *input* tipo númerico para el valor.
